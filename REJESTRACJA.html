@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="FoodFindStyle.css">
+    <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Baloo" rel="stylesheet">
+
+    <script src="jquery-3.2.1.js"></script>
+    <script src="jquery.validate.min.js"></script>
+    <script src="form-validation.js"></script>
+
+    <title>Rejestracja - FoodFind</title>
+</head>
+<body>
+
+<!-- Navigation -->
+
+    <header>
+        <div class="container">
+            <h1>FoodFind</h1>
+        </div>
+        <nav>
+            <ul class="nav nav-pills">
+                <li class="active"><a href="HOME.html">Home</a></li>
+                <li><a href="REJESTRACJA.html">Rejestracja</a></li>
+                <li><a href="KONTAKT.html">Kontakt</a></li>
+            </ul>
+        </nav>
+        </div>
+        </div>
+    </header>
+
+    <section id="Rejestracja">
+        <div class="container">
+            <h4>Zgłoszenie Food Trucka</h4>
+            <p>Jeżeli chciałbyś mieć swojego Food Trucka umieszczonego w mojej aplikacji, wypełni formularz.</p>
+            <p class="text-muted">Pola oznaczone gwiazdką<span style="color:red"> (*)</span> są obowiązkowe do wypełnienia.</p>
+        </div>
+        </section>
+
+<!-- Food Truck Info -->
+
+    <section>
+        <div class="container col-mx-3">
+            <h3>Food Truck Info.</h3>
+        </div>
+    </section>
+
+    <section id="Zgloszenie">
+        <div class="container">
+            <div id="truck" class="col-md-4">
+             <!--   <img src="foodtruck.gif" class="img-responsive img-thumbnail" alt="foodtruck">  -->
+            </div>
+            <form id="registration">
+                <div class="col-md-8">
+                    <div class="form-group row">
+                        <label for="nameTruck" class="col-sm-4 col-form-label">Nazwa Food trucka<span style="color:red"> *</span></label>
+                        <div class="col-sm-6">
+                            <input type="text" name="nameTruck" class="form-control" id="nameTruck" required>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label for="Since" class="col-sm-4 col-form-label">Rok założenia<span style="color:red"> *</span></label>
+                        <div class="col-sm-6">
+                            <input type="number" class="form-control" id="since" required>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label for="pickup_place"class="col-sm-4 col-form-label">Miasto<span style="color:red"> *</span></label>
+                        <div class="col-sm-6">
+                            <select name="pickup_place" class="form-control" id="pickup_place">
+                                <option value="">Wybierz jeden</option>
+                                <option value="city1" >Wrocław</option>
+                                <option value="city2" >Warszawa</option>
+                                <option value="city3" >Poznań</option>
+                            </select>
+                            <!--<input type="text" class="form-control" id="city" required> -->
+                        </div>
+                    </div>
+                    <!--
+                    <div class="form-group row">
+                        <label for="area" class="col-sm-4 col-form-label">Obszar działalności</label>
+                        <div class="col-sm-6">
+                            <input type="text" class="form-control" id="area" required>
+                        </div>
+                    </div>
+                    -->
+                    <div class="form-group row">
+                        <label for="opis" class="col-sm-4 col-form-label">Opis FoodTrucka<span style="color:red"> *</span></label>
+                        <div class="col-xs-6">
+                            <textarea class="form-control" rows="5" id="opis" aria-invalid="false" name="comment"></textarea>
+                        </div>
+                    </div>
+                    <div class="form-group row form-check form-check-inline">
+                        <label class="col-sm-4 form-check-label">Kasa fiskalna<span style="color:red"> *</span></label>
+                        <div class="col-xs-6">
+                            <div class="col-sm-3 text-muted">
+                                <input class="form-check-input" type="radio" id="money" name="topic1"> sl<ak</label>
+                            </div>
+                            <div class="col-sm-3 text-muted">
+                                <input class="form-check-input" type="radio" id="moneycard"name="topic1"> Nie</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group row form-check form-check-inline">
+                        <label class="col-sm-4 form-check-label">Możliwość płatności kartą<span style="color:red"> *</span></label>
+                        <div class="col-xs-6">
+                            <div class="col-sm-3 text-muted">
+                                <input class="form-check-input" type="radio" name="inlineRadioOptions22" id="card1"> Tak</label>
+                            </div>
+                            <div class="col-sm-3 text-muted">
+                                <input class="form-check-input" type="radio" name="inlineRadioOptions22" id="card2"> Nie</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group row form-check form-check-inline">
+                        <label class="col-sm-4 form-check-label">Koncesja na alkohol<span style="color:red"> *</span></label>
+                        <div class="col-xs-6">
+                            <div class="col-sm-3 text-muted">
+                                <input class="form-check-input" type="radio" name="inlineRadioOptions33" id="alko1"> Tak</label>
+                            </div>
+                            <div class="col-sm-3 text-muted">
+                                <input class="form-check-input" type="radio" name="inlineRadioOptions33" id="alko2"> Nie</label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Menu -->
+
+                    <h3>Food Truck Menu:</h3>
+                    <div id="sentfile" class="col-md-8">
+                        <p1>Maksymalny rozmiar załączonego pliku 2MB w formacie: pdf lub jpg.</p1>
+                        <div id="panel" class="panel col-sm-14 panel-default">
+                            <div class="panel-body">
+                                <p>Załącz Plik:</p>
+                                <label class="custom-file">
+                                    <input type="file" name="file" id="file" class="custom-file-input">
+                                    <span class="custom-file-control"></span>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                    <!-- Dane Kontaktowe -->
+
+                    <section>
+                        <div class="container col-md-8">
+                            <h3>Dane Kontaktowe.</h3>
+                        </div>
+                    </section>
+
+                    <div class="form-group row">
+                        <label for="surnames" class="col-sm-4 col-form-label">imię i nazwisko<span style="color:red"> *</span></label>
+                        <div class="col-sm-6">
+                            <input type="text" name="surnames"class="form-control" id="surnames" required>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label for="phone" class="col-sm-4 col-form-label">Numer telefonu<span style="color:red"> *</span></label>
+                        <div class="col-sm-6">
+                            <input type="tel" name="phone" class="form-control" id="phone" required>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label for="adresEmail" class="col-sm-4 col-form-label">adres e-mail<span style="color:red"> *</span></label>
+                        <div class="col-sm-6">
+                            <input type="email" name="adresEmail"class="form-control" id="adresEmail" required>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label for="fb" class="col-sm-4 col-form-label">Facebook Funpage<span style="color:red"> *</span></label>
+                        <div class="col-sm-6">
+                            <input type="url" name="fb" class="form-control" id="fb" required>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label for="website" class="col-sm-4 col-form-label">Strona internetowa<span style="color:red"> *</span></label>
+                        <div class="col-sm-6">
+                            <input type="url" name="website" class="form-control" id="website" required>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label for="firm" class="col-sm-4 col-form-label">Dane rejestrowe firmy<span style="color:red"> *</span></label>
+                        <div class="col-sm-6">
+                            <input type="text" name="firm" class="form-control" id="firm" required>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="checkbox2" class="checkbox">
+                    <label class="col-sm-9">
+                        <input type="checkbox" name="checkzgoda" id="blankCheckbox2" value="option1" aria-label="check2">
+                    </label>
+                    <div class="col-sm-9">
+                        <p1><span style="color:red"> *</span> Wyrażam zgodę na otrzymywanie od FoodFind za pośrednictwem środków komunikacji elektronicznej, informacji handlowej w rozumieniu ustawy z dnia 18 lipca 2002 roku o świadczeniu usług drogą elektroniczną (Dz. U. Nr 144, poz. 1204 ze zm.).</p1>
+                    </div>
+                </div>
+
+                <div id="send" class="col-sm-9">
+                    <button type="submit" class="btn btn-primary btn-lg">Prześlij zgłoszenie</button>
+                </div>
+
+                <section>
+                    <div class="container col-md-6">
+                        <h3>Dziękuję za przesłanie zgłoszenia!</h3>
+                    </div>
+                </section>
+            </form>
+        </div>
+    </section>
+
+<!-- Footer -->
+
+<!--
+    <footer>
+        <p>FoodFind, Copyright &copy; 2017</p>
+    </footer>
+
+    -->
+</body>
+</html>
+

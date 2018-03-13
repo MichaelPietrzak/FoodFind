@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="FoodFindStyle.css">
+    <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Baloo" rel="stylesheet">
+
+    <title>Kontakt - FoodFind</title>
+</head>
+<body>
+<!-- Navigation -->
+
+    <header>
+        <div class="container">
+            <h1>FoodFind</h1>
+        </div>
+        <nav>
+            <ul class="nav nav-pills">
+                <li class="active"><a href="HOME.html">Home</a></li>
+                <li><a href="REJESTRACJA.html">Rejestracja</a></li>
+                <li><a href="KONTAKT.html">Kontakt</a></li>
+            </ul>
+        </nav>
+        </div>
+        </div>
+    </header>
+
+    <!-- Kontakt -->
+
+    <section id="kontakt">
+        <div class="container">
+            <h4>Zapraszam do kontaktu</h4>
+            <p>Jeśli chcesz mi zadać pytanie, przesłać komentarz lub zgłosić problem, skorzystaj z poniższego formularza kontaktowego.</p>
+                <form>
+                    <div class="form-group row">
+                        <label for="name" class="col-sm-2 col-form-label">Imię i nazwisko<span style="color:red"> *</span></label>
+                        <div class="col-sm-4">
+                            <input type="text" class="form-control" id="name" required>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label for="email" class="col-sm-2 col-form-label">Adres email<span style="color:red"> *</span></label>
+                        <div class="col-sm-4">
+                            <input type="email" class="form-control" id="email" required>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label for="temat" class="col-sm-2 col-form-label">temat</label>
+                        <div class="col-sm-4">
+                            <input type="text" class="form-control" id="temat">
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label for="wiadomosc" class="col-sm-2 col-form-label">Treść Wiadomości</label>
+                        <div class="col-xs-6">
+                            <textarea class="form-control" rows="5" id="wiadomosc" aria-invalid="false"></textarea>
+                        </div>
+                    </div>
+
+                    <div id="sentfile" class="col-sm-4">
+                        <p1>Maksymalny rozmiar załączonego pliku 2MB.</p1>
+                        <div id="panel" class="panel col-sm-9 panel-default">
+                            <div class="panel-body">
+                                <p>Załącz Plik:</p>
+                            <label class="custom-file">
+                                <input type="file" id="file" class="custom-file-input">
+                                    <span class="custom-file-control"></span>
+                                </label>
+                            </div>
+                        </div>
+                     </div>
+
+                    <div id="checkbox1" class="checkbox">
+                        <label class="col-sm-9">
+                            <input type="checkbox" id="blankCheckbox" value="option1" aria-label="check" required>
+                        </label>
+                        <div class="col-sm-9">
+                            <p1><span style="color:red"> *</span> Wyrażam zgodę na przetwarzanie przez FoodFind moich danych osobowych zawartych w niniejszym formularzu, w celu otrzymania odpowiedzi na zadane pytanie.</p1>
+                        </div>
+                    </div>
+
+                        <div id="checkbox2" class="checkbox">
+                            <label class="col-sm-9">
+                                <input type="checkbox" id="blankCheckbox2" value="option1" aria-label="check2">
+                            </label>
+                            <div class="col-sm-9">
+                                <p1><span style="color:red"> *</span> Wyrażam zgodę na otrzymywanie od FoodFind za pośrednictwem środków komunikacji elektronicznej, informacji handlowej w rozumieniu ustawy z dnia 18 lipca 2002 roku o świadczeniu usług drogą elektroniczną (Dz. U. Nr 144, poz. 1204 ze zm.).</p1>
+                            </div>
+                        </div>
+
+                    <div id="send" class="col-sm-9">
+                    <button type="button" class="btn btn-primary btn-lg">Wyślij</button>
+                    </div>
+                </form>
+        </div>
+    </section>
+
+<!-- Pierwszy Kontakt -->
+
+    <section>
+    <div id="contact2">
+        <p>Dodatkowy kontakt: michal.pietrzak18@gmail.com</p>
+        <p>Kom: 510 981 711</p>
+    </div>
+    </section>
+
+<!-- Footer -->
+
+        <footer>
+                <p>FoodFind, Copyright &copy; 2017</p>
+        </footer>
+</body>
+</html>
